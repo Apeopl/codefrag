@@ -2,7 +2,7 @@
 context = {
             'title': title,
             'has_view_permission': self.has_view_permission(request),
-            'opts': super().get_changelist_instance(request).opts
+            'opts': self.opts
         }
 return render(request, 'admin/xxx/xxx/xxx.html', context=context)
 
